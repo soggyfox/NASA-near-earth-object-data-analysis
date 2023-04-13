@@ -2,7 +2,7 @@
 # Data Collection, Preparation and Analysis For Near Earth Objects Using NASA's Open API
 
 # Insights Reached
-The key ionsights I gained are that larger objects are potentially more hazerdous and that the distance the asteroid is from eath is not as an important factor in whetehr or not a NEO is hazerodus. The speed is also not a facotr.
+The key insights I gained are that larger objects are potentially more hazerdous. Also, the distance of an asteroid from Earth is not an important factor in whetehr or not a NEO (near earth object) is hazerodus. Speed is also not a key factor. Size is a key factor. Heat Maps are a great way to guage which features corellate well with each other. From there is it our job to decipher if these correlations are by chance or meaningful.
 
 Most NEO's are non hazerdous.
 
@@ -10,7 +10,7 @@ The range of Velocities is quiet large and is the range of brightness.
 
 The range in size is large too.
 
-There are many NEO's that NASA keep an eye on to see if they change trajectory and may become potentially hazerdous. You need to be within a certain miss diatnce to be within the hazerdous caregory.
+There are many NEO's that NASA keep an eye on to see if they change trajectory and may become potentially hazerdous. You need to be within a certain miss distance to be within the hazerdous caregory.
 
 -----------------
 # Challenges faced 
