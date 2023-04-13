@@ -69,8 +69,8 @@ Categorical data
 We mainly analyze hazardous asteroids because they are of more interest to us.
 
 NEO stands for near-earth object, which is a comet or asteroid which is in close proximity to earth. The potentially hazardous ones are of interest to us. We want to see what kind of features these potentially hazardous objects have. Their speed, their size, their absolute magnitude and if these attributes have any correlation to one another.
-
 Straight away we see that there are many more no hazardous NEO's
+
 -----------------
 ## Visuals
 We create numerous visuals but the most importat of which is firstly the heat map. 
