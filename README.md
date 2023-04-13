@@ -1,4 +1,29 @@
-# -Assignment-1-Data-Collection-Preparation
+# Data Collection, Preparation and Analysis For Near Earth Objects Using NASA's Open API
+
+# Challenges faced 
+Firstly the data did not allow me to return a large data set. It was restricted to near earth objects from within the last 7 days. To overcome this we use a for loop with specified dates using the date object. We can now get a larger data set by specifying the start and end dates we want to use. The api spits out jsons and we join them together in a smart manner for later analysis.
+
+The jsons are added in an itterative fashion so one might expect the first date to be added first, the second date specified to be added second and so on in an itterative manner. In reality the dates are added at ranodom, the same way as would be in a hashmap. If we want to analyse data by the days of the week we would have a problem. Luckily a key is added to each json item. This prevents json data being overwritten and keeps track of which date the information specified is for.
+
+There is a lot of data and it is difficult to know what attributes to compare to one another. There are many many combination. I did not even pick all attributes for our data set. A heat map can provide insights in to what attributes may be nice to plot against eachother. and this is how |I overcame that challenghe.
+
+# Insights Reached
+The key ionsights I gained are that larger objects are potentially more hazerdous and that the distance the asteroid is from eath is not as an important factor in whetehr or not a NEO is hazerodus. The speed is also not a facotr.
+
+Most NEO's are non hazerdous.
+
+The range of Velocities is quiet large and is the range of brightness.
+
+The range in size is large too.
+
+There are many NEO's that NASA keep an eye on to see if they change trajectory and may become potentially hazerdous. You need to be within a certain miss diatnce to be within the hazerdous caregory.
+
+# Future works
+In the future other NEO attributes can be analysed such as whether it is a sentry object.
+
+This analysis can also be conducted on other orbiting bodies such as mars. Currently these are only done for near earth objects. One could add anlaysis on near mars obnjects.
+
+One can also add in NASA's weather service REST API and see if the trajectory of NEO's changes per day given different space weather condition. This can be pploytted in a time graph plot.
 
 ## Task Task 1 - Retrieval of data - Choosing an API
 In accordance with the API list provided at https://api.nasa.gov/, we will use NASA's Near Earth Object (NEO) API.
@@ -68,30 +93,6 @@ This heat map shows the pairwise correlations between the attributes of the NEO 
 ![image](https://user-images.githubusercontent.com/44605305/231742589-f65768fe-d022-4671-bb99-edc381a2c769.png)
 
 
-Task 3 - challenges
-Firstly the data did not allow me to return a large data set. It was restricted to near earth objects from within the last 7 days. To overcome this we use a for loop with specified dates using the date object. We can now get a larger data set by specifying the start and end dates we want to use. The api spits out jsons and we join them together in a smart manner for later analysis.
-
-The jsons are added in an itterative fashion so one might expect the first date to be added first, the second date specified to be added second and so on in an itterative manner. In reality the dates are added at ranodom, the same way as would be in a hashmap. If we want to analyse data by the days of the week we would have a problem. Luckily a key is added to each json item. This prevents json data being overwritten and keeps track of which date the information specified is for.
-
-There is a lot of data and it is difficult to know what attributes to compare to one another. There are many many combination. I did not even pick all attributes for our data set. A heat map can provide insights in to what attributes may be nice to plot against eachother. and this is how |I overcame that challenghe.
-
-Task 3 - Insights
-The kley ionsights I gained are that larger objects are potentially more hazerdous and that the distance the asteroid is from eath is not as an important factor in whetehr or not a NEO is hazerodus. The speed is also not a facotr.
-
-Most NEO's are non hazerdous.
-
-The range of Velocities is quiet large and is the range of brightness.
-
-The range in size is large too.
-
-There are many NEO's that NASA keep an eye on to see if they change trajectory and may become potentially hazerdous. You need to be within a certain miss diatnce to be within the hazerdous caregory.
-
-Task 3 - challenges
-In the future other NEO attributes can be analysed such as whether it is a sentry object.
-
-This analysis can also be conducted on other orbiting bodies such as mars. Currently these are only done for near earth objects. One could add anlaysis on near mars obnjects.
-
-One can also add in NASA's weather service REST API and see if the trajectory of NEO's changes per day given different space weather condition. This can be pploytted in a time graph plot.
 
 
 
