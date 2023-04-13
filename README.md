@@ -1,15 +1,6 @@
 
 # Data Collection, Preparation and Analysis For Near Earth Objects Using NASA's Open API
 
-
-# Challenges faced 
-Firstly the data did not allow me to return a large data set. It was restricted to near earth objects from within the last 7 days. To overcome this we use a for loop with specified dates using the date object. We can now get a larger data set by specifying the start and end dates we want to use. The api spits out jsons and we join them together in a smart manner for later analysis.
-
-The jsons are added in an itterative fashion so one might expect the first date to be added first, the second date specified to be added second and so on in an itterative manner. In reality the dates are added at ranodom, the same way as would be in a hashmap. If we want to analyse data by the days of the week we would have a problem. Luckily a key is added to each json item. This prevents json data being overwritten and keeps track of which date the information specified is for.
-
-There is a lot of data and it is difficult to know what attributes to compare to one another. There are many many combination. I did not even pick all attributes for our data set. A heat map can provide insights in to what attributes may be nice to plot against eachother. and this is how |I overcame that challenghe.
-
------------------
 # Insights Reached
 The key ionsights I gained are that larger objects are potentially more hazerdous and that the distance the asteroid is from eath is not as an important factor in whetehr or not a NEO is hazerodus. The speed is also not a facotr.
 
@@ -20,6 +11,17 @@ The range of Velocities is quiet large and is the range of brightness.
 The range in size is large too.
 
 There are many NEO's that NASA keep an eye on to see if they change trajectory and may become potentially hazerdous. You need to be within a certain miss diatnce to be within the hazerdous caregory.
+
+-----------------
+# Challenges faced 
+Firstly the data did not allow me to return a large data set. It was restricted to near earth objects from within the last 7 days. To overcome this we use a for loop with specified dates using the date object. We can now get a larger data set by specifying the start and end dates we want to use. The api spits out jsons and we join them together in a smart manner for later analysis.
+
+The jsons are added in an itterative fashion so one might expect the first date to be added first, the second date specified to be added second and so on in an itterative manner. In reality the dates are added at ranodom, the same way as would be in a hashmap. If we want to analyse data by the days of the week we would have a problem. Luckily a key is added to each json item. This prevents json data being overwritten and keeps track of which date the information specified is for.
+
+There is a lot of data and it is difficult to know what attributes to compare to one another. There are many many combination. I did not even pick all attributes for our data set. A heat map can provide insights in to what attributes may be nice to plot against eachother. and this is how |I overcame that challenghe.
+
+
+
 
 -----------------
 # Future works
