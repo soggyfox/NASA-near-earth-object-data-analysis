@@ -1,7 +1,7 @@
 
 # Data Collection, Preparation and Analysis For Near Earth Objects Using NASA's Open API
 
------------------
+
 # Challenges faced 
 Firstly the data did not allow me to return a large data set. It was restricted to near earth objects from within the last 7 days. To overcome this we use a for loop with specified dates using the date object. We can now get a larger data set by specifying the start and end dates we want to use. The api spits out jsons and we join them together in a smart manner for later analysis.
 
